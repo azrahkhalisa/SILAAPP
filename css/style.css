@@ -609,3 +609,66 @@ input[type="date"]{
     border: 2px solid #334155;
     background: none;
 }
+
+/* TABLES */
+/* ======= */
+.data-table{
+    width: 100%;
+    border-collapse: collapse;
+    /* Menjadikan batas dempet dengan sekitarnya */
+    margin-top: 16px;
+    min-width: 600px;
+    /* lebar batas mutlak */
+}
+
+.data-table caption{
+    text-align: left;
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 12px;
+}
+
+/* th td */
+.data-table th,
+.data-table td{
+    border-bottom: 1px solid #334155;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.data-table th{
+    background-color: #243044;
+    color: #f1f5f9;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    /* Mengubah judul jadi huruf besar */
+}
+
+.data-table td{
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+/* zebra-stripe */
+.data-table tbody tr:nth-child(even){
+    background-color: rgba(30, 41, 59, 0.5);
+}
+
+/* Hover */
+.data-table tbody tr:hover{
+    background-color: rgba(64, 149, 170, 0.5);
+}
+
+/* responsive */
+@media (max-width: 768px){
+    .data-table{
+        font-size: 0.8rem;
+    }
+
+    .data-table th,
+    .data-table tr{
+        padding: 8px 10px;
+    }
+}
